@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-a-assets>
+            <a-assets-item id="bench" src=""></a-assets-item>
+            <a-assets-item id="street" src=""></a-assets-item>
+            <a-assets-item id="lamp" src=""></a-assets-item>
+            <a-assets-item id="girl" src=""></a-assets-item>
+            <a-assets-item id="cat" src=""></a-assets-item>
+
+        </a-a-assets>
+        <a-entity
+        scale="0.003 0.003 0.003"
+        gltf-model="#girl"
+        position="-2 0.4 3" 
+        shadow="cast:true;"
+        ></a-entity>
+
+        <a-entity
+        scale="0.003 0.003 0.003"
+        gltf-model="#steet"
+        position="-2 0.4 3" 
+        shadow="cast:true;"
+        ></a-entity>
+
+        <a-entity
+        scale="0.003 0.003 0.003"
+        gltf-model="#bench"
+        position="-2 0.4 3" 
+        shadow="cast:true;"
+        ></a-entity>
+        
+        <a-entity
+        scale="0.003 0.003 0.003"
+        gltf-model="#lamp"
+        position="-2 0.4 3" 
+        shadow="cast:true;"
+        ></a-entity>
+
+        <a-entity
+        scale="0.003 0.003 0.003"
+        gltf-model="#cat"
+        position="-2 0.4 3" 
+        shadow="cast:true;"
+        ></a-entity>
+
+        <a-entity light="type: directional; castShadow: true; intensity: 1; distance: 50; decay: 2; color:yellow"
+        position="-100 18 20"></a-entity>
+
+    </a-entity>
+
+    <a-entity light="type: ambient; intensity: 0.5;">
+    </a-entity>
+
+    </a-scene>
+    
+</body>
+</html>
